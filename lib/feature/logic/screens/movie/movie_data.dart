@@ -21,8 +21,7 @@ class MovieData {
 
   Future<List<MovieModel?>> fetchAllLocalPosts() async {
     final localPosts = _postsBox.values.toList();
-    log("${localPosts.length.toString()} ;;;;;;;");
-     return localPosts;
+      return localPosts;
   }
 
   // static const MethodChannel _channel = MethodChannel('native_bridge');
@@ -38,16 +37,14 @@ class MovieData {
   void getMovies() async {
     homeCubit.onUpdateToInitState([]);
     if (await NetworkInfoImpl().isConected == false) {
-      showSnackBar("noInternet".tr(), backgroundColor: Colors.redAccent);
+      showSnackBar("No Internet Connection", backgroundColor: Colors.redAccent);
       final local = await fetchAllLocalPosts();
       homeCubit.onUpdateData(local);
       return;
     } else {
       var res = await LogicRepository().getMovie();
       homeCubit.onUpdateData(res);
-      savePostsLocally(posts: res).then((value) async {
-
-       });
+      savePostsLocally(posts: res);
     }
   }
 }

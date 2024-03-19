@@ -29,7 +29,7 @@ class _MoviesState extends State<Movies> with AutomaticKeepAliveClientMixin {
           centerTitle: true,
           leading: const SizedBox(),
           title: Text(
-            'main'.tr(context: context),
+            'Movies',
             style: TextStyleManager.appBarStyle
                 .copyWith(color: ColorManager.white),
           ),

@@ -40,15 +40,10 @@ class CustomButtonAnimation extends StatefulWidget {
     required this.child,
     required this.onTap,
     this.color,
-    // this.focusColor,
-    // this.hoverColor,
-    // this.highlightColor,
-    // this.splashColor,
+
     this.colorBrightness,
     this.elevation,
-    // this.focusElevation,
-    // this.hoverElevation,
-    // this.highlightElevation,
+
     this.padding = const EdgeInsets.all(0),
     this.borderRadius = 0.0,
     this.clipBehavior = Clip.none,

@@ -48,7 +48,7 @@ class _MovieDetailsState extends State<MovieDetails> {
                           height: 12.h,
                         ),
                         BuildDesc(
-                          txt: "desceription   ",
+                          txt: "description : ",
                           desc: infoState.data?.overview ?? '',
                         ),
                       ]),

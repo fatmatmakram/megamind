@@ -5,8 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive/hive.dart';
-import 'package:megamindd/core/extentions/translate_ext.dart';
-import 'package:megamindd/feature/logic/screens/movie/widgets/build_movie_item.dart';
+ import 'package:megamindd/feature/logic/screens/movie/widgets/build_movie_item.dart';
 
 import '../../../../core/blocks/generic_cubit/generic_cubit.dart';
 import '../../../../core/customs/custom_loading.dart';
