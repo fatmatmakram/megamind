@@ -1,0 +1,100 @@
+// ignore_for_file: constant_identifier_names
+
+const String IMAGE_PATH = "assets/images";
+const String SVG_PATH = "assets/svg";
+const String LOTTIE_PATH = "assets/lottie";
+
+class AssetsManager {
+  // SVG
+  static const String no_internet = "$SVG_PATH/no_internet.json";
+  static const String error = "$SVG_PATH/error.json";
+  static const String no_data = "$SVG_PATH/no_data.json";
+  static const String done = "$SVG_PATH/done.json";
+
+  ///-------------------------------- LOTTIE Files --------------------------------///
+  static const String logo_lottie = "$LOTTIE_PATH/logo_lottie.json";
+  static const String loading_animation_blue_lottie = "$LOTTIE_PATH/loading_animation_blue.json";
+  static const String api_empty_lottie = "$LOTTIE_PATH/empty_cart.json";
+  static const String api_error_lottie = "$LOTTIE_PATH/api_error.json";
+  static const String success_lottie = "$LOTTIE_PATH/success.json";
+  static const String no_internet_lottie = "$LOTTIE_PATH/no_internet.json";
+  static const String logout_lottie = "$LOTTIE_PATH/logout.json";
+  static const String successful_order_lottie = "$LOTTIE_PATH/successfull_order.json";
+  static const String emptyCart = "$LOTTIE_PATH/empty_box.json";
+//---------------------------- IMAGE
+  static const String logo = "$IMAGE_PATH/logo.png";
+  static const String logoThree = "$IMAGE_PATH/logo_three.png";
+  static const String backIcon = "$IMAGE_PATH/backIcon.png";
+  static const String cart = "$IMAGE_PATH/cart.png";
+  static const String code = "$IMAGE_PATH/code.png";
+  static const String home = "$IMAGE_PATH/home.png";
+  static const String loading = "$IMAGE_PATH/loading.png";
+  static const String order = "$IMAGE_PATH/order.png";
+  static const String warn = "$IMAGE_PATH/warn.png";
+  static const String walletVector = "$IMAGE_PATH/wallet_vector.png";
+  static const String location = "$IMAGE_PATH/location.png";
+  static const String orderIcon1 = "$IMAGE_PATH/order_icon_one.png";
+  static const String orderIcon2 = "$IMAGE_PATH/order_icon_two.png";
+  static const String orderIcon3 = "$IMAGE_PATH/order_icon_three.png";
+  static const String pin = "$IMAGE_PATH/pin.png";
+  static const String noun_list = "$IMAGE_PATH/noun_list.png";
+  static const String noun_mail = "$IMAGE_PATH/noun_mail.png";
+  static const String noun_menu = "$IMAGE_PATH/noun_menu.png";
+  static const String noun_mobile = "$IMAGE_PATH/noun_mobile.png";
+  static const String noun_user = "$IMAGE_PATH/noun_user.png";
+  static const String saudi = "$IMAGE_PATH/saudi.png";
+  static const String loc = "$IMAGE_PATH/loc.png";
+  static const String united_states = "$IMAGE_PATH/united_states.png";
+  static const String bgfooter = "$IMAGE_PATH/bgfooter.png";
+  static const String about = "$IMAGE_PATH/about.png";
+  static const String playBlue = "$IMAGE_PATH/playBlue.png";
+  static const String back = "$IMAGE_PATH/back.png";
+  static const String camera = "$IMAGE_PATH/camera.png";
+  static const String categactive = "$IMAGE_PATH/categactive.png";
+  static const String categp = "$IMAGE_PATH/categp.png";
+  static const String check = "$IMAGE_PATH/check.png";
+  static const String clock = "$IMAGE_PATH/clock.png";
+  static const String time = "$IMAGE_PATH/time.png";
+  static const String closecircle = "$IMAGE_PATH/closecircle.png";
+  static const String call = "$IMAGE_PATH/call.png";
+  static const String delete = "$IMAGE_PATH/delete.png";
+  static const String down = "$IMAGE_PATH/down.png";
+  static const String edit = "$IMAGE_PATH/edit.png";
+  static const String eye = "$IMAGE_PATH/eye.png";
+  static const String faq = "$IMAGE_PATH/faq.png";
+  static const String fav = "$IMAGE_PATH/fav.png";
+  static const String filter = "$IMAGE_PATH/filter.png";
+  static const String homeactive = "$IMAGE_PATH/homeactive.png";
+  static const String Iconsax_active = "$IMAGE_PATH/Iconsax-1.png";
+  static const String Iconsax = "$IMAGE_PATH/Iconsax.png";
+  static const String img = "$IMAGE_PATH/img.png";
+  static const String lang = "$IMAGE_PATH/lang.png";
+  static const String logout = "$IMAGE_PATH/logout.png";
+  static const String magnifying_active = "$IMAGE_PATH/magnifying-1.png";
+  static const String magnifying = "$IMAGE_PATH/magnifying.png";
+  static const String more = "$IMAGE_PATH/more.png";
+  static const String moreactive = "$IMAGE_PATH/moreactive.png";
+  static const String notifi_active = "$IMAGE_PATH/notifi-1.png";
+  static const String notifi = "$IMAGE_PATH/notifi.png";
+  static const String notification = "$IMAGE_PATH/notification.png";
+  static const String palayactive = "$IMAGE_PATH/palayactive.png";
+  static const String play_active = "$IMAGE_PATH/play-1.png";
+  static const String play = "$IMAGE_PATH/play.png";
+  static const String playcircle = "$IMAGE_PATH/playcircle.png";
+  static const String profile = "$IMAGE_PATH/profile.png";
+  static const String rules = "$IMAGE_PATH/rules.png";
+  static const String comment = "$IMAGE_PATH/comment.png";
+  static const String addresses = "$IMAGE_PATH/address.png";
+  static const String cars = "$IMAGE_PATH/cars.png";
+  static const String info = "$IMAGE_PATH/info.png";
+  static const String setting = "$IMAGE_PATH/settings.png";
+  static const String user = "$IMAGE_PATH/user.png";
+  static const String wallet = "$IMAGE_PATH/wallet.png";
+  static const String shape = "$IMAGE_PATH/shape.png";
+  static const String vec = "$IMAGE_PATH/vec.png";
+  static const String vect = "$IMAGE_PATH/vect.png";
+  static const String bell = "$IMAGE_PATH/bell.png";
+  static const String quiz = "$IMAGE_PATH/quiz.png";
+  static const String english = "$IMAGE_PATH/english.png";
+  static const String download = "$IMAGE_PATH/download.png";
+}
