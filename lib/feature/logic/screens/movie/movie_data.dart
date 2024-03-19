@@ -6,6 +6,7 @@ class MovieData {
 
   init() {
     homeCubit = GenericBloc([]);
+
     _postsBox = Hive.box<MovieModel?>('movies');
     getMovies();
     fetchAllLocalPosts();

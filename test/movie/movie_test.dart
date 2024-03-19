@@ -1,5 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:megamindd/feature/logic/logic_resources/logic_repo_imports.dart';
+import 'package:megamindd/feature/logic/models/responses_models/movie_details_model.dart';
 import 'package:megamindd/feature/logic/models/responses_models/movie_model.dart';
 
 void main() {
@@ -16,5 +17,6 @@ void main() {
         expect(movies, isA<List<MovieModel>>());
       });
     });
+
   });
 }

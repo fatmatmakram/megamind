@@ -1,6 +1,6 @@
  import 'package:hive/hive.dart';
 
-import '../../feature/logic/models/responses_models/movie_model.dart';
+ import '../models/responses_models/movie_model.dart';
 
 class MovieAdapter extends TypeAdapter<MovieModel?>{
   @override

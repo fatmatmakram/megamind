@@ -3,11 +3,11 @@
 import 'dio_imports.dart';
 
 enum ReturnType {
-  Model,
-  List,
+  model,
+  list,
 }
 
-enum MethodType { Get }
+enum MethodType { get }
 
 class GenericHttp<T> {
 
@@ -26,7 +26,7 @@ class GenericHttp<T> {
     var dataJson = jsonBody ?? {};
 
     switch (methodType) {
-      case MethodType.Get:
+      case MethodType.get:
         return _getData(
             name: name,
             query: query,
@@ -62,13 +62,12 @@ class GenericHttp<T> {
     Function(dynamic data)? dataKeyFun,
   ) async {
     switch (returnType) {
-      case ReturnType.Model:
+      case ReturnType.model:
         return Function.apply(toJsonFunc, [
           dataKeyFun == null ? data : Function.apply(dataKeyFun, [data])
         ]);
-      case ReturnType.Model:
-        return;
-      case ReturnType.List:
+
+      case ReturnType.list:
         return List<T>.from(
           dataKeyFun == null
               ? data

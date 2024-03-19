@@ -229,10 +229,10 @@ packages:
     dependency: "direct main"
     description:
       name: dio
-      sha256: "7d328c4d898a61efc3cd93655a0955858e29a0aa647f0f9e02d59b3bb275e2e8"
+      sha256: "49af28382aefc53562459104f64d16b9dfd1e8ef68c862d5af436cc8356ce5a8"
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.6"
+    version: "5.4.1"
   equatable:
     dependency: "direct main"
     description:
@@ -335,12 +335,12 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_screenutil
-      sha256: "0a122936b450324cbdfd51be0819cc6fcebb093eb65585e9cd92263f7a1a8a39"
+      sha256: "8cf100b8e4973dc570b6415a2090b0bfaa8756ad333db46939efc3e774ee100d"
       url: "https://pub.dev"
     source: hosted
-    version: "5.7.0"
+    version: "5.9.0"
   flutter_spinkit:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: flutter_spinkit
       sha256: b39c753e909d4796906c5696a14daf33639a76e017136c8d82bf3e620ce5bb8e
@@ -413,14 +413,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.13.6"
-  http_mock_adapter:
-    dependency: "direct dev"
-    description:
-      name: http_mock_adapter
-      sha256: "6fa1a00932a5758750f54c5594f8bf37393fe5ae86e49325281b5a9d99114f33"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.3.3"
   http_multi_server:
     dependency: transitive
     description:
@@ -449,10 +441,10 @@ packages:
     dependency: "direct main"
     description:
       name: internet_connection_checker
-      sha256: "6836d1e2193b3deab615820084a69521ec245550aba6e0a91b21c3757129872e"
+      sha256: "1c683e63e89c9ac66a40748b1b20889fd9804980da732bf2b58d6d5456c8e876"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1+4"
+    version: "1.0.0+1"
   intl:
     dependency: transitive
     description:
@@ -1052,4 +1044,4 @@ packages:
     version: "3.1.2"
 sdks:
   dart: ">=3.1.0-185.0.dev <4.0.0"
-  flutter: ">=3.7.0"
+  flutter: ">=3.10.0"

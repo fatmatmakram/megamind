@@ -29,7 +29,7 @@ class DioHelper {
       } else {
         showErrorMessage(response);
       }
-    } on DioError catch (e) {
+    } on DioException catch (e) {
       showErrorMessage(e.response);
     }
     return null;

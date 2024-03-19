@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'movie_model.dart';
+part of '../movie_model.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator

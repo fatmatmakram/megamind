@@ -1,17 +1,17 @@
+part of 'widgets_imports.dart';
 
-
-part of'widgets_imports.dart';
 class BuildMovieItem extends StatelessWidget {
-  final String txt;
-    final MovieDetailsModel orderDetailsModel;
+  final MovieDetailsModel orderDetailsModel;
+
   const BuildMovieItem({
-    Key? key, required this.txt,     required this.orderDetailsModel,
+    Key? key,
+    required this.orderDetailsModel,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-       decoration: BoxDecoration(
+      decoration: BoxDecoration(
         color: ColorManager.white,
         boxShadow: [
           BoxShadow(
@@ -32,22 +32,24 @@ class BuildMovieItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                   orderDetailsModel.title??'' ,
+                    orderDetailsModel.title ?? '',
                     style: TextStyleManager.labelFieldStyle,
                   ),
-                  const SizedBox(height: 5,),
-
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Text(
-                    orderDetailsModel.releaseDate??'',
+                    orderDetailsModel.releaseDate ?? '',
                     style: TextStyleManager.labelFieldStyle.copyWith(
                         color: ColorManager.greyNav,
                         fontSize: 10,
                         fontWeight: FontWeightManager.bold),
                   ),
-                  const SizedBox(height: 5,),
+                  const SizedBox(
+                    height: 5,
+                  ),
                   Text(
-
-                    orderDetailsModel.originalLanguage??'',
+                    orderDetailsModel.originalLanguage ?? '',
                     style: TextStyleManager.labelFieldStyle
                         .copyWith(color: ColorManager.greyNav, fontSize: 9),
                   ),
@@ -74,18 +76,12 @@ class BuildMovieItem extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                             horizontal: 8.0, vertical: 5),
-                        child: Text(  orderDetailsModel.voteCount.toString() ,
+                        child: Text(orderDetailsModel.voteCount.toString(),
                             style: TextStyleManager.primaryStyle),
                       )),
                   SizedBox(
                     height: 8.h,
                   ),
-                  Text(
-                    txt,
-                    style: TextStyleManager.labelFieldStyle
-                        .copyWith(fontSize: 10, color: ColorManager.error),
-                  )
-
                 ],
               ),
             ),

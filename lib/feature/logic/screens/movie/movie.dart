@@ -9,7 +9,7 @@ class Movies extends StatefulWidget {
   State<Movies> createState() => _MoviesState();
 }
 
-class _MoviesState extends State<Movies> with AutomaticKeepAliveClientMixin {
+class _MoviesState extends State<Movies> {
   MovieData movieData = MovieData();
 
   @override
@@ -19,9 +19,9 @@ class _MoviesState extends State<Movies> with AutomaticKeepAliveClientMixin {
     movieData.init();
   }
 
-  @override
+   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
+     return WillPopScope(
       onWillPop: () async => false,
       child: Scaffold(
         appBar: AppBar(
@@ -70,7 +70,5 @@ class _MoviesState extends State<Movies> with AutomaticKeepAliveClientMixin {
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;
+
 }

@@ -2,7 +2,7 @@
 
 import 'package:hive_flutter/hive_flutter.dart';
 
-part 'movie_model.g.dart';
+part 'generated/movie_model.g.dart';
 @HiveType(typeId: 0)
 class MovieModel {
 

@@ -32,27 +32,23 @@ class _MovieDetailsState extends State<MovieDetails> {
             builder: (context, infoState) {
               if (infoState is GenericUpdateState) {
                 return ListView(
+                  padding:
+                  EdgeInsets.symmetric(vertical: 10.h, horizontal: 16.w),
                   children: [
-                    Padding(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 0, horizontal: 16.w),
-                      child: Column(children: [
-                        BuildMovieItem(
-                          orderDetailsModel:
-                              movieDetailsData.movieDetailsCubit.state.data!,
-                          txt: movieDetailsData
-                                  .movieDetailsCubit.state.data!.title ??
-                              '',
-                        ),
-                        SizedBox(
-                          height: 12.h,
-                        ),
-                        BuildDesc(
-                          txt: "description : ",
-                          desc: infoState.data?.overview ?? '',
-                        ),
-                      ]),
-                    ),
+                    Column(children: [
+                      BuildMovieItem(
+                        orderDetailsModel:
+                            movieDetailsData.movieDetailsCubit.state.data!,
+
+                      ),
+                      SizedBox(
+                        height: 12.h,
+                      ),
+                      BuildDesc(
+                        txt: "description : ",
+                        desc: infoState.data?.overview ?? '',
+                      ),
+                    ]),
                     const SizedBox(
                       height: 5,
                     ),

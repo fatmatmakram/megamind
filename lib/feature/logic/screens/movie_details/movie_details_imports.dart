@@ -1,10 +1,10 @@
 
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
 
  import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:hive/hive.dart';
 import 'package:megamindd/feature/logic/screens/movie_details/widgets/widgets_imports.dart';
 
 import '../../../../core/blocks/generic_cubit/generic_cubit.dart';

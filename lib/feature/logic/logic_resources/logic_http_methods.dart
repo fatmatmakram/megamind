@@ -11,8 +11,8 @@ class LogicHttpMethods {
     var result = await GenericHttp<MovieModel>().callApi(
       name:
           ApiNames.movies,
-      returnType: ReturnType.List,
-      methodType: MethodType.Get,
+      returnType: ReturnType.list,
+      methodType: MethodType.get,
       returnDataFun: (data) => data['results'],
       toJsonFunc: (json) => MovieModel.fromMap(json),
     );
@@ -23,9 +23,9 @@ class LogicHttpMethods {
     var result = await GenericHttp<MovieDetailsModel>().callApi(
       name:
           "${ApiNames.movieDetails}/$movieId",
-      returnType: ReturnType.Model,
+      returnType: ReturnType.model,
       showLoader: false,
-      methodType: MethodType.Get,
+      methodType: MethodType.get,
       toJsonFunc: (json) => MovieDetailsModel.fromJson(json),
       returnDataFun: (data) {
         if (data != null) {
